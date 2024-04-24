@@ -1,0 +1,12 @@
+swiper-container {
+    padding: 5px 10px;
+
+    swiper-slide {
+        padding: 20px 8px;
+        overflow: visible;
+
+        .product-card {
+            margin: 0 auto;
+        }
+    }
+}

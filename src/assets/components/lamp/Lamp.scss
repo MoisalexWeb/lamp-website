@@ -1,0 +1,96 @@
+.lamp {
+    background: var(--first-color);
+    background: var(--first-gradient);
+    width: 420px;
+    height: 520px;
+    border-top-right-radius: 20rem;
+    border-top-left-radius: 20rem;
+    position: relative;
+
+    @media screen and (max-width: 1100px) {
+        width: 350px;
+        height: 450px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 350px;
+        height: 450px;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 300px;
+        height: 400px;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 220px;
+        height: 320px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 30px;
+        background: hsla(15, 60%, 52%, 0.6);
+        filter: blur(12px);
+        z-index: -1;
+    }
+
+    &-img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+    }
+
+    &-text {
+        font-size: 80px;
+        line-height: 80px;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.3;
+        position: absolute;
+        top: 35%;
+        z-index: 1;
+
+        @media screen and (max-width: 900px) {
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.center-bottom {
+    bottom: 20px;
+    height: max-content;
+    position: relative;
+    top: 30px;
+}
+
+.center .lamp-text {
+    width: 100%;
+    text-align: center;
+}
+
+.to-top .lamp-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.to-bottom .lamp-text {
+    writing-mode: vertical-lr;
+}

@@ -1,0 +1,39 @@
+.number {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+
+    &-num {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 400;
+    
+        @media screen and (max-width: 1050px) {
+            font-size: 30px;
+        }
+
+        span {
+            color: var(--first-color);
+        }
+    }
+
+    &-text {
+        text-transform: capitalize;
+        color: var(--text-color);
+    }
+}
+
+
+@media screen and (max-width: 775px) {
+    .number {
+        width: 80px;
+
+        &-num {
+            font-size: 25px;
+        }
+
+        &-text {
+            font-size: 14px;   
+        }
+    }
+}

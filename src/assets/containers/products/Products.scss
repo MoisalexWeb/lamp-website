@@ -1,0 +1,31 @@
+@use "../../sass/base" as b;
+
+.products {
+    @include b.container;
+    padding-top: 80px;
+
+    .section-title {
+        text-align: center;
+    }
+
+    .section-description {
+        font-size: 20px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+        justify-items: center;
+        margin-top: 40px;
+    }
+}

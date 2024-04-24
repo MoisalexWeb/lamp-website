@@ -1,0 +1,58 @@
+@use "../../sass/base" as b;
+
+.features {
+    @include b.container;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 0;
+
+    .section-description {
+        font-size: 18px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    &__texts {
+        height: max-content;
+        align-self: center;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .features .section-description {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        max-width: 400px;
+
+        &__texts {
+            grid-row: 2/3;
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .features__grid {
+        grid-template-columns: 1fr;
+    }
+}

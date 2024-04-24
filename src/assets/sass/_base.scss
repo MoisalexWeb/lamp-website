@@ -1,0 +1,16 @@
+@mixin container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+@mixin flexContainerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition($prop, $dur: 0.2s) {
+    transition: $prop $dur ease;
+}

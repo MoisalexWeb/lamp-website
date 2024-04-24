@@ -1,0 +1,81 @@
+@use "./assets/sass/colors";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    background-color: var(--body-color);
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1100px) {
+        font-size: 45px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 30px;
+    }
+}
+
+.section-description {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #bdbcbc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #666666;
+    border-radius: 10px;
+}
+
+body.dark-theme::-webkit-scrollbar {
+    background-color: #888;
+}
+
+body.dark-theme::-webkit-scrollbar-thumb {
+    background-color: #555;
+}
