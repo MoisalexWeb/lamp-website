@@ -1,8 +1,17 @@
-# React + Vite
+# Responsive Lamp Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es una landing page hecha con [React JS](https://react.dev/) y [SASS](https://sass-lang.com/)
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Links](#links)
+- [Autor](#autor)
+
+### Links
+
+- Live Site URL: [Live site at GitHub Pages](https://moisalexweb.github.io/lamp-website/)
+
+## Autor
+
+- Frontend Mentor - [@MoisalexWeb](https://www.frontendmentor.io/profile/moisalexweb)
+- Instagram - [@moisalexweb_sw](https://www.instagram.com/moisalexweb_sw/)
